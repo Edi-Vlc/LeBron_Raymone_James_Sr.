@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maid Velic</title>
+    <title>LeBron James</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,12 +32,14 @@
         h1, h2, h3 {
             color: #333;
         }
-        .career-highlights, .statistics, .personal-life, .awards, .philanthropy, .early-life, .trivia {
-            margin: 20px 0;
+        .section {
+            margin: 40px 0;
         }
-        img {
+        .section img {
             max-width: 100%;
             height: auto;
+            display: block;
+            margin: 0 auto;
         }
         .profile-img {
             display: block;
@@ -49,76 +51,116 @@
             font-size: 3em;
             font-weight: bold;
         }
+        .timeline {
+            border-left: 3px solid #333;
+            padding-left: 20px;
+            list-style: none;
+            position: relative;
+        }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #333;
+        }
+        .timeline li {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        .timeline li:before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            bottom: 0;
+            width: 10px;
+            height: 10px;
+            background: #333;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1 class="large-heading">Maid Velic</h1>
+        <h1 class="large-heading">LeBron James</h1>
     </header>
     <div class="container">
-        <div class="card">
-            <h2>Persönliche Informationen</h2>
-            <img src="maid-velic.jpg" alt="Maid Velic" class="profile-img">
-            <p><strong>Vollständiger Name:</strong> Maid Velic</p>
-            <p><strong>Geburtsdatum:</strong> 5. Mai 1995</p>
-            <p><strong>Geburtsort:</strong> Zenica, Bosnien und Herzegowina</p>
-            <p><strong>Größe:</strong> 1,82 m (6 ft 0 in)</p>
-            <p><strong>Gewicht:</strong> 80 kg (176 lb)</p>
-            <p><strong>Beruf:</strong> Fiktiver Charakter</p>
+        <div class="section">
+            <div class="card">
+                <h2>Persönliche Informationen</h2>
+                <img src="lebron-james.jpg" alt="LeBron James" class="profile-img">
+                <p><strong>Vollständiger Name:</strong> LeBron Raymone James Sr.</p>
+                <p><strong>Spitzname:</strong> King James</p>
+                <p><strong>Geburtsdatum:</strong> 30. Dezember 1984</p>
+                <p><strong>Geburtsort:</strong> Akron, Ohio, USA</p>
+                <p><strong>Größe:</strong> 2,06 m (6 ft 9 in)</p>
+                <p><strong>Gewicht:</strong> 113 kg (250 lb)</p>
+                <p><strong>Position:</strong> Small Forward / Power Forward</p>
+                <p><strong>Aktuelles Team:</strong> Los Angeles Lakers</p>
+            </div>
         </div>
 
-        <div class="card early-life">
-            <h2>Frühes Leben</h2>
-            <p>Maid Velic wurde am 5. Mai 1995 in Zenica, Bosnien und Herzegowina, geboren. Schon in jungen Jahren zeigte er großes Interesse an Sport und Wissenschaft. Seine Eltern unterstützten ihn in seinen vielfältigen Interessen und förderten seine Talente.</p>
-            <img src="maid-young.jpg" alt="Junger Maid Velic">
+        <div class="section">
+            <div class="card">
+                <h2>Frühes Leben</h2>
+                <p>LeBron James wuchs in schwierigen Verhältnissen in Akron, Ohio, auf. Seine alleinerziehende Mutter Gloria kämpfte hart, um für ihn zu sorgen. Schon früh zeigte sich LeBrons Talent im Basketball, und er wurde schnell zu einem aufstrebenden Star in der High School.</p>
+                <img src="lebron-young.jpg" alt="Junger LeBron James">
+            </div>
         </div>
 
-        <div class="card career-highlights">
-            <h2>Karriere-Highlights</h2>
-            <ul>
-                <li>2013: Abschluss der High School mit Auszeichnung</li>
-                <li>2015: Aufnahme in das nationale Team für Leichtathletik</li>
-                <li>2017: Gewinn der Goldmedaille bei den Balkan-Meisterschaften</li>
-                <li>2019: Veröffentlichung seiner ersten wissenschaftlichen Arbeit im Bereich Physik</li>
-                <li>2021: Auszeichnung als „Wissenschaftler des Jahres“ in Bosnien und Herzegowina</li>
-            </ul>
+        <div class="section">
+            <div class="card">
+                <h2>Karriere-Highlights</h2>
+                <ul class="timeline">
+                    <li>2003: Als Nr. 1 im NBA-Draft ausgewählt</li>
+                    <li>2004: NBA Rookie of the Year</li>
+                    <li>2008: Olympia-Goldmedaille in Peking</li>
+                    <li>2012: Olympia-Goldmedaille in London</li>
+                    <li>2016: Führte die Cleveland Cavaliers zur ersten NBA-Meisterschaft</li>
+                    <li>2020: Führte die Los Angeles Lakers zur NBA-Meisterschaft</li>
+                </ul>
+                <img src="lebron-career.jpg" alt="LeBron James Karriere Highlights">
+            </div>
         </div>
 
-        <div class="card statistics">
-            <h2>Statistiken</h2>
-            <p><strong>Wissenschaftliche Arbeiten veröffentlicht:</strong> 7</p>
-            <p><strong>Wettkämpfe gewonnen:</strong> 12</p>
-            <p><strong>Patente angemeldet:</strong> 3</p>
+        <div class="section">
+            <div class="card">
+                <h2>Statistiken</h2>
+                <p><strong>Punkte pro Spiel:</strong> 27.1</p>
+                <p><strong>Rebounds pro Spiel:</strong> 7.4</p>
+                <p><strong>Assists pro Spiel:</strong> 7.4</p>
+                <p><strong>Field Goal Prozent:</strong> 50.4%</p>
+                <p><strong>Dreipunkt Prozentsatz:</strong> 34.6%</p>
+                <p><strong>Freiwurf Prozent:</strong> 73.4%</p>
+                <img src="lebron-stats.jpg" alt="LeBron James Statistiken">
+            </div>
         </div>
 
-        <div class="card personal-life">
-            <h2>Privatleben</h2>
-            <p>Maid Velic ist nicht nur ein erfolgreicher Wissenschaftler und Sportler, sondern auch ein leidenschaftlicher Musiker. In seiner Freizeit spielt er Gitarre und tritt gelegentlich in örtlichen Clubs auf. Er ist bekannt für seine Disziplin und seinen Einsatz, sowohl in seiner Karriere als auch in seinem persönlichen Leben.</p>
+        <div class="section">
+            <div class="card">
+                <h2>Privatleben</h2>
+                <p>LeBron James wurde am 30. Dezember 1984 in Akron, Ohio, geboren. Er ist seit 2013 mit Savannah Brinson verheiratet und hat drei Kinder: LeBron James Jr. (Bronny), Bryce Maximus James und Zhuri James.</p>
+                <p>Er ist auch für seine philanthropischen Bemühungen bekannt, einschließlich der Gründung der LeBron James Family Foundation, die sich darauf konzentriert, die Bildung von benachteiligten Kindern zu unterstützen.</p>
+                <img src="lebron-family.jpg" alt="LeBron James Familie">
+            </div>
         </div>
 
-        <div class="card awards">
-            <h2>Auszeichnungen</h2>
-            <ul>
-                <li>Goldmedaille bei den Balkan-Meisterschaften (2017)</li>
-                <li>Wissenschaftler des Jahres - Bosnien und Herzegowina (2021)</li>
-                <li>Beste wissenschaftliche Veröffentlichung - Physik (2019)</li>
-            </ul>
-        </div>
-
-        <div class="card philanthropy">
-            <h2>Philanthropie</h2>
-            <p>Maid Velic engagiert sich in verschiedenen wohltätigen Projekten und unterstützt Initiativen zur Förderung junger Talente im Bereich Wissenschaft und Sport. Er glaubt daran, dass die nächste Generation die Chance bekommen sollte, ihre Träume zu verwirklichen, und arbeitet aktiv daran, jungen Forschern und Athleten den Einstieg zu erleichtern.</p>
-            <img src="maid-philanthropy.jpg" alt="Maid Velic Philanthropy">
-        </div>
-
-        <div class="card trivia">
-            <h2>Interessante Fakten</h2>
-            <ul>
-                <li>Maid Velic spricht vier Sprachen fließend.</li>
-                <li>Er hat eine Leidenschaft für das Programmieren und hat mehrere Open-Source-Projekte ins Leben gerufen.</li>
-                <li>Maid ist ein begeisterter Reisender und hat bereits über 20 Länder besucht.</li>
-            </ul>
-        </div>
-    </div>
-</body>
-</html>
+        <div class="section">
+            <div class="card">
+                <h2>Auszeichnungen</h2>
+                <ul>
+                    <li>4× NBA Most Valuable Player (MVP)</li>
+                    <li>4× NBA Finals MVP</li>
+                    <li>17× NBA All-Star</li>
+                    <li>13× All-NBA First Team</li>
+                    <li>2× All-NBA Second Team</li>
+                    <li>2× All-NBA Third Team</li>
+                    <li>5× NBA All-Defensive First Team</li>
+                    <li>1× NBA All-Defensive Second Team</li>
+                    <li>NBA Rookie of the Year (2004)</li>
+                    <li>NBA Scoring Champion (2008)</li>
+                </ul>
+                <img src="lebron-awards.jpg"><img>
